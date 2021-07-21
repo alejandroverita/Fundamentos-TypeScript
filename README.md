@@ -34,3 +34,11 @@ Compile on save, es tener en cuenta el comando `tsc --watch`
 **Datos primitivos**
 
 Number, boolean, string, array, tupla, enum, any, void, null, undefinded, never, object
+
+### Void y Never
+
+- `void` se utiliza para identificar funciones que terminan y no retornan algún valor; y `never` es una función que nunca termina y no da algún retorno.
+
+- `void `podría ser usado en una función que temina solo haciendo el log de la info de un usuario.
+
+- `never` podría ser usado en una función que cada x tiempo esta mandando estadisticas de la app. Por lo que nunca termina.
