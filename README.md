@@ -42,3 +42,23 @@ Number, boolean, string, array, tupla, enum, any, void, null, undefinded, never,
 - `void `podría ser usado en una función que temina solo haciendo el log de la info de un usuario.
 
 - `never` podría ser usado en una función que cada x tiempo esta mandando estadisticas de la app. Por lo que nunca termina.
+
+
+###UNION DE TIPOS ALIAS Y TIPOS LITERALES
+
+**Unión de tipos**
+Permite el uso de uno o más tipos. Para unir tipos, se usa el caracter |
+Ejemplo:
+let userId: string | number;
+
+**Alias**
+Sirven para definir un tipo de dato con nombre personalizado. Se usa la palabra reservada type
+Ejemplo:
+type userId = string | number;
+let myUserId: userId;
+
+**Tipos literales**
+Permiten definir rápidamente una serie de elementos constantes, se pueden usar con strings, numbers o booleanos.
+Ejemplo:
+let tileSize: 8 | 16 | 32;
+let squareSize: ‘200x200’ | ‘500x500’ | ‘1000x1000’
