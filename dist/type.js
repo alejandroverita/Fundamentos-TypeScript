@@ -1,26 +1,29 @@
 "use strict";
+/* En TypeScript se puede definir una variable con multiple tipos de datos: Union Type
+ * - Se usa el simbolo de pipe ('|') entre los tipos
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 // 10, '10'
+var iDUser;
+iDUser = 10;
+iDUser = '10';
+// Buscar username dado un ID
+function getUsernameByID(id) {
+    // logica de negocio, find the user
+    return 'luixaviles';
+}
+getUsernameByID(20);
+getUsernameByID('20');
 var idUser;
 idUser = 10;
 idUser = '10';
 // Buscar username dado un ID
-function getUsernameById(id) {
+function getUsernameByID2(id) {
     // logica de negocio, find the user
     return 'luixaviles';
 }
-getUsernameById(20);
-getUsernameById('20');
-var idUser;
-idUser = 10;
-idUser = '10';
-// Buscar username dado un ID
-function getUsernameById(id) {
-    // logica de negocio, find the user
-    return 'luixaviles';
-}
-getUsernameById(20);
-getUsernameById('20');
+getUsernameByID2(20);
+getUsernameByID2('20');
 // let smallPicture: SquareSize = '200x200'; // --> Error
 var smallPicture = '100x100';
 var mediumPicture = '500x500';
