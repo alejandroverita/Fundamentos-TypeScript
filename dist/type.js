@@ -4,7 +4,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 // 10, '10'
-var iDUser;
+let iDUser;
 iDUser = 10;
 iDUser = '10';
 // Buscar username dado un ID
@@ -14,7 +14,7 @@ function getUsernameByID(id) {
 }
 getUsernameByID(20);
 getUsernameByID('20');
-var idUser;
+let idUser;
 idUser = 10;
 idUser = '10';
 // Buscar username dado un ID
@@ -25,5 +25,5 @@ function getUsernameByID2(id) {
 getUsernameByID2(20);
 getUsernameByID2('20');
 // let smallPicture: SquareSize = '200x200'; // --> Error
-var smallPicture = '100x100';
-var mediumPicture = '500x500';
+let smallPicture = '100x100';
+let mediumPicture = '500x500';

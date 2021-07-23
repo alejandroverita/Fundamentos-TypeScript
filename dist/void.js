@@ -9,6 +9,6 @@ showInfo({ id: 1, username: 'alejitovera', firstName: 'Luis' });
 function handleError(code, message) {
     //Process your code here
     //Generate a message
-    throw new Error(message + ". Code " + code);
+    throw new Error(`${message}. Code ${code}`);
 }
 handleError(404, 'Not found');

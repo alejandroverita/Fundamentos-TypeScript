@@ -2,27 +2,33 @@
 console.log('Hello');
 //number
 //explicit
-var phone;
+let phone;
 phone = 1234;
 //phone = 'Error' //esto es un error
 //inferido 
-var phoneNumber = 98987; //asigna por defecto el tipo de dato
+let phoneNumber = 98987; //asigna por defecto el tipo de dato
 //hexadecimal: empieza por 0x
-var hex = 0xffffff;
+let hex = 0xffffff;
 //octal: empieza por 0o;
-var octal;
+let octal;
 //binario: empieza por 0b
-var binary;
+let binary;
 //TIPO BOOLEAN
-var isPro;
+let isPro;
 isPro = true;
 isPro = false;
 //isPro = 1 //Error
 //STRINGS EXPLICITOS E IMPLICITOS
-var username;
+let username;
 username = 'lavera3';
-var lastname = 'vera'; //implicito
+let lastname = 'vera'; //implicito
 // Template String with use of back-tick ``
-var userInfo;
-userInfo = "\n    User info:\n    username: " + username + "\n    firtsname: " + (username + ' anbreaker') + "\n    phone: " + phone + "\n    isPro: " + isPro + "\n";
+let userInfo;
+userInfo = `
+    User info:
+    username: ${username}
+    firtsname: ${username + ' anbreaker'}
+    phone: ${phone}
+    isPro: ${isPro}
+`;
 console.log('userInfo', userInfo);

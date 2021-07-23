@@ -9,41 +9,41 @@ enum PhotoOrientation {
 
 class Picture {
     //Propiedades
-    private id: number; 
-    private title: string;
-    private orientation: PhotoOrientation;
+    #id: number; //a partir de ts 3.8 se puede poner '#' como private
+    #title: string;
+    #orientation: PhotoOrientation;
 
     constructor(id: number, 
                title: string, 
                orientation: PhotoOrientation){
-        this.id = id;
-        this.title= title;
-        this.orientation = orientation;
+        this.#id = id;
+        this.#title= title;
+        this.#orientation = orientation;
 
     }
 
     //Comportamiento
     toString(){
-        return `[id: ${this.id},
-                 title: ${this.title},
-                 orientation: ${this.orientation}]`;
+        return `[id: ${this.#id},
+                 title: ${this.#title},
+                 orientation: ${this.#orientation}]`;
     }
 }
 
 
 class Album {
-    private id: number;
-    private title: string;
-    private pictures: Picture[];
+    #id: number;  
+    #title: string;
+    #pictures: Picture[];
 
     constructor(id: number, title: string){
-        this.id = id;
-        this.title = title;
-        this.pictures = []; //inicializamos para que la estructura este lista para recibir objetos mas adelantes
+        this.#id = id;
+        this.#title = title;
+        this.#pictures = []; //inicializamos para que la estructura este lista para recibir objetos mas adelantes
     }
 
     addPicture(picture: Picture) {
-        this.pictures.push(picture) //accediendo a la propiedad pictures
+        this.#pictures.push(picture) //accediendo a la propiedad pictures
     }
 }
 

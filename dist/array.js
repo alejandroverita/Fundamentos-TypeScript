@@ -1,14 +1,14 @@
 "use strict";
 //Corchetes []
 //Tipo Explicito
-var users;
+let users;
 users = ['Alejnadro', 'Vera', 'Hernandez'];
 // users = [1, true, 'Luis']; //Error
 // Tipo inferido 
-var otherUsers = ['Alejnadro', 'Vera', 'Hernandez']; //infiere que es un array de strings
+let otherUsers = ['Alejnadro', 'Vera', 'Hernandez']; //infiere que es un array de strings
 // users = [1, true, 'Luis']; //Error
 // Array<TIPO>
-var picturesTitle;
+let picturesTitle;
 picturesTitle = ['Landscape', 'Favorite sunset', 'Vacation time'];
 //Accediendo a los valores de un array
 console.log('First user', users[0]);

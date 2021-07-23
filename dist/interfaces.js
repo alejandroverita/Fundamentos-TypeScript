@@ -8,9 +8,11 @@ var PhotoOrientation;
     PhotoOrientation[PhotoOrientation["Panorama"] = 3] = "Panorama";
 })(PhotoOrientation || (PhotoOrientation = {}));
 function showPicture(picture) {
-    console.log("Title: " + picture.title + " \n                  Date: " + picture.date + " \n                  Orientation: " + picture.orientation);
+    console.log(`Title: ${picture.title} 
+                  Date: ${picture.date} 
+                  Orientation: ${picture.orientation}`);
 }
-var myPic = {
+let myPic = {
     title: 'Test Title',
     date: '2020-03',
     orientation: PhotoOrientation.Landscape
@@ -23,7 +25,7 @@ showPicture({
     // extra: 'test'//Error
 });
 function generatePicture(config) {
-    var pic = {
+    const pic = {
         title: 'Default',
         date: '2020-03',
     };
@@ -36,11 +38,11 @@ function generatePicture(config) {
     }
     return pic;
 }
-var picture = generatePicture({});
+let picture = generatePicture({});
 console.log('Picture', picture);
 picture = generatePicture({ title: 'Travel Pic' });
 console.log('Picture', picture);
-var user;
+let user;
 user = {
     id: 10,
     username: 'Alejandro',
